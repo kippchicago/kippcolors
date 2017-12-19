@@ -5,15 +5,13 @@
 \alias{scale_colour_kipp}
 \title{Setup color palette for ggplot2}
 \usage{
-scale_color_kipp(..., palette = "kipp_div", discrete = TRUE, alpha = 1,
-  reverse = FALSE)
+scale_color_kipp(palette = "kipp_div", discrete = TRUE, alpha = 1,
+  reverse = FALSE, ...)
 
-scale_colour_kipp(..., palette = "kipp_div", discrete = TRUE, alpha = 1,
-  reverse = FALSE)
+scale_colour_kipp(palette = "kipp_div", discrete = TRUE, alpha = 1,
+  reverse = FALSE, ...)
 }
 \arguments{
-\item{...}{additional arguments to pass to scale_color_gradientn}
-
 \item{palette}{Choose from 'kipp_palettes' list}
 
 \item{discrete}{whether to use a discrete color palette}
@@ -21,6 +19,8 @@ scale_colour_kipp(..., palette = "kipp_div", discrete = TRUE, alpha = 1,
 \item{alpha}{transparency}
 
 \item{reverse}{logical, Reverse the order of the colours?}
+
+\item{...}{additional arguments to pass to scale_color_gradientn}
 }
 \description{
 Setup color palette for ggplot2

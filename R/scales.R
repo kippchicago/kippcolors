@@ -57,12 +57,12 @@ kipp_pal <- function(palette="kipp_div", alpha = 1, reverse = FALSE) {
 #' @export
 #'
 #' @importFrom ggplot2 discrete_scale scale_color_gradientn
-scale_color_kipp <- function(..., palette="kipp_div",
-                              discrete = TRUE, alpha = 1, reverse = FALSE) {
+scale_color_kipp <- function(palette="kipp_div",
+                              discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
   if (discrete) {
     discrete_scale("colour", "kipp", palette=kipp_pal(palette, alpha = alpha, reverse = reverse))
   } else {
-    scale_color_gradientn(colours = kipp_pal(palette, alpha = alpha, reverse = reverse, ...)(256))
+    scale_color_gradientn(colours = kipp_pal(palette, alpha = alpha, reverse = reverse)(256), ...)
   }
   #scale_colour_manual(values=kipp_palettes[[palette]])
 }
@@ -85,13 +85,13 @@ scale_colour_kipp <- scale_color_kipp
 #' @importFrom ggplot2 scale_fill_manual discrete_scale scale_fill_gradientn
 #'
 #' @export
-scale_fill_kipp <- function(..., palette="kipp_div",
-                             discrete = TRUE, alpha=1, reverse = TRUE) {
+scale_fill_kipp <- function(palette="kipp_div",
+                             discrete = TRUE, alpha=1, reverse = TRUE, ...) {
   if (discrete) {
     discrete_scale("fill", "kipp", palette=kipp_pal(palette, alpha = alpha, reverse = reverse))
   }
   else {
-    scale_fill_gradientn(colours = kipp_pal(palette, alpha = alpha, reverse = reverse, ...)(256))
+    scale_fill_gradientn(colours = kipp_pal(palette, alpha = alpha, reverse = reverse)(256), ...)
   }
 }
 
