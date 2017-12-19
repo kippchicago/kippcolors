@@ -16,3 +16,5 @@ Imports:
     grDevices,
     viridis,
     ggplot2
+URL: https://github.com/kippchicago/kippcolors
+BugReports: https://github.com/kippchicago/kippcolors/issues
