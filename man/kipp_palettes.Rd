@@ -4,7 +4,7 @@
 \name{kipp_palettes}
 \alias{kipp_palettes}
 \title{KIPP Color Palettes}
-\format{An object of class \code{list} of length 8.}
+\format{An object of class \code{list} of length 10.}
 \usage{
 kipp_palettes
 }
@@ -15,6 +15,8 @@ A collection of color palettes based on the [KIPP official brand guide](www.kipp
 The list of available palettes is:
 * kipp_qual
 * kipp_div
+* kipp_greenorgange
+* kipp_blueorange
 * kipp_bluegray
 * kipp_greengray
 * kipp_orangegray

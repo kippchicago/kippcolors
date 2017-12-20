@@ -5,6 +5,8 @@
 #'The list of available palettes is:
 #' * kipp_qual
 #' * kipp_div
+#' * kipp_greenorgange
+#' * kipp_blueorange
 #' * kipp_bluegray
 #' * kipp_greengray
 #' * kipp_orangegray
@@ -62,6 +64,25 @@ kipp_palettes <- list(
                "#E27425"
   ),
 
+  kipp_greenorange = c(
+               "#439539", # greens
+               "#BCD631",
+
+               "#FEDA00",  # oranges
+               "#FEBC11",
+               "#F7941E",
+               "#E27425"
+  ),
+
+  kipp_blueorange = c(
+               "#17345B", # blues
+               "#255694",
+
+               "#FEDA00",  # oranges
+               "#FEBC11",
+               "#F7941E",
+               "#E27425"
+  ),
 
   ## Blue to Gray palette
   kipp_bluegray = c("#17345B", # blues
