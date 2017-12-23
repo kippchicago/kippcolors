@@ -91,7 +91,7 @@ scale_fill_kipp <- function(palette="kipp_div",
     discrete_scale("fill", "kipp", palette=kipp_pal(palette, alpha = alpha, reverse = reverse), ...)
   }
   else {
-    scale_fill_gradientn(colours = kipp_pal(palette, alpha = alpha, reverse = reverse, ...)(256))
+    scale_fill_gradientn(colours = kipp_pal(palette, alpha = alpha, reverse = reverse)(256), ...)
   }
 }
 
