@@ -15,6 +15,7 @@ Imports:
     scales,
     grDevices,
     viridis,
-    ggplot2
+    ggplot2,
+    tidyverse
 URL: https://github.com/kippchicago/kippcolors
 BugReports: https://github.com/kippchicago/kippcolors/issues
