@@ -13,16 +13,16 @@ A collection of color palettes based on the [KIPP official brand guide](www.kipp
 }
 \details{
 The list of available palettes is:
-* kipp_qual
-* kipp_div
-* kipp_greenorgange
-* kipp_blueorange
-* kipp_bluegray
-* kipp_greengray
-* kipp_orangegray
-* kipp_greenbrown
-* kipp_browngray
-* kipp_grays
+kipp_qual
+kipp_div
+kipp_greenorgange
+kipp_blueorange
+kipp_bluegray
+kipp_greengray
+kipp_orangegray
+kipp_greenbrown
+kipp_browngray
+kipp_grays
 }
 \examples{
 

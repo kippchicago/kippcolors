@@ -1,18 +1,48 @@
+#' KIPP Colors
+#'
+#' Named list of colors from the [KIPP official brand guide](www.kipp.org/brand).
+#'
+#'The list of available colors is: darkblue, blue, lightblue, skyblue, darkorange, orange,
+#'lightorange, yellow, green, lightgreen, darkgray, gray, lightgray, and brown
+
+#' @export
+kipp_colors <- list(
+  darkblue   = "#17345B", # blues
+  blue       = "#255694",
+  lightblue  = "#60A2D7",
+  skyblue    = "#A7CFEE",
+
+  darkorange  = "#E27425", # oranges
+  orange      = "#F7941E",
+  lightorange = "#FEBC11",
+  yellow      = "#FEDA00",
+
+  green       = "#439539", # greens
+  lightgreen  = "#BCD631",
+
+  darkgray    = "#8D8685", #grays
+  gray        = "#CFCCC1",
+  lightgray   = "#F4EFEB",
+
+  brown       = "#C49A6C" #brown
+)
+
+
 #' KIPP Color Palettes
 #'
 #'A collection of color palettes based on the [KIPP official brand guide](www.kipp.org/brand).
 #'
 #'The list of available palettes is:
-#' * kipp_qual
-#' * kipp_div
-#' * kipp_greenorgange
-#' * kipp_blueorange
-#' * kipp_bluegray
-#' * kipp_greengray
-#' * kipp_orangegray
-#' * kipp_greenbrown
-#' * kipp_browngray
-#' * kipp_grays
+#' kipp_qual
+#' kipp_div
+#' kipp_greenorgange
+#' kipp_blueorange
+#' kipp_bluegray
+#' kipp_greengray
+#' kipp_orangegray
+#' kipp_greenbrown
+#' kipp_browngray
+#' kipp_grays
 #'
 #'@examples
 #'
@@ -34,106 +64,109 @@
 #' @export
 kipp_palettes <- list(
   ## KIPP offical colors, less grays
-  kipp_qual = c("#17345B", # blues
-                "#255694",
-                "#60A2D7",
-                "#A7CFEE",
+  kipp_qual = c(kipp_colors$darkblue, # blues
+                kipp_colors$blue,
+                kipp_colors$lightblue,
+                kipp_colors$skyblue,
 
-                "#E27425", # oranges
-                "#F7941E",
-                "#FEBC11",
-                "#FEDA00",
+                kipp_colors$darkorange, # oranges
+                kipp_colors$orange,
+                kipp_colors$lightorange,
+                kipp_colors$yellow,
 
-                "#439539", # greens
-                "#BCD631",
+                kipp_colors$green, # greens
+                kipp_colors$lightgreen,
 
-                "#C49A6C" #brown
+                kipp_colors$brown #brown
   ),
 
   ## KIPP  official colors, sequentially, grays and browns removed.
 
-  kipp_div = c("#17345B", # blues
-               "#255694",
+  kipp_div = c(kipp_colors$darkblue, # blues
+               kipp_colors$blue,
 
-               "#439539", # greens
-               "#BCD631",
+               kipp_colors$green, # greens
+               kipp_colors$light,
 
-               "#FEDA00",  # oranges
-               "#FEBC11",
-               "#F7941E",
-               "#E27425"
+               kipp_colors$yellow,  # oranges
+               kipp_colors$lightorange,
+               kipp_colors$orange,
+               kipp_colors$darkorange
   ),
 
   kipp_greenorange = c(
-               "#439539", # greens
-               "#BCD631",
+    kipp_colors$green, # greens
+    kipp_colors$light,
 
-               "#FEDA00",  # oranges
-               "#FEBC11",
-               "#F7941E",
-               "#E27425"
+    kipp_colors$yellow,  # oranges
+    kipp_colors$lightorange,
+    kipp_colors$orange,
+    kipp_colors$darkorange
   ),
 
   kipp_blueorange = c(
-               "#17345B", # blues
-               "#255694",
+               kipp_colors$darkblue, # blues
+               kipp_colors$blue,
 
-               "#FEDA00",  # oranges
-               "#FEBC11",
-               "#F7941E",
-               "#E27425"
+               kipp_colors$yellow,  # oranges
+               kipp_colors$lightorange,
+               kipp_colors$orange,
+               kipp_colors$darkorange
   ),
 
   ## Blue to Gray palette
-  kipp_bluegray = c("#17345B", # blues
-                    "#255694",
-                    "#60A2D7",
-                    "#A7CFEE",
+  kipp_bluegray = c(kipp_colors$darkblue, # blues
+                    kipp_colors$blue,
+                    kipp_colors$lightblue,
+                    kipp_colors$skyblue,
 
 
-                    "#F4EFEB", # grays
-                    "#CFCCC1",
-                    "#8D8685"
+                    kipp_colors$lightgray, # grays
+                    kipp_colors$gray,
+                    kipp_colors$darkgray
                     ),
 
 
   ## Green to Gray palette
-  kipp_greengray = c("#439539", # greens
-                     "#BCD631",
+  kipp_greengray = c(kipp_colors$green, # greens
+                     kipp_colors$lightgreen,
 
-                     "#F4EFEB", # grays
-                     "#CFCCC1",
-                     "#8D8685"
+                     kipp_colors$lightgray, # grays
+                     kipp_colors$gray,
+                     kipp_colors$darkgray
                      ),
 
   ## Orange to Gray palette
-  kipp_orangegray = c("#E27425", # oranges
-                       "#F7941E",
-                       "#FEBC11",
-                       "#FEDA00",
+  kipp_orangegray = c(kipp_colors$darkorange, # oranges
+                      kipp_colors$orange,
+                      kipp_colors$lightorange,
+                      kipp_colors$yellow,
 
-                       "#F4EFEB", # grays
-                       "#CFCCC1",
-                       "#8D8685"
+                      kipp_colors$lightgray, # grays
+                      kipp_colors$gray,
+                      kipp_colors$darkgray
                        ),
 
   ## Green to borwn diverging palette
-  kipp_greenbrown = c("#439539", # greens
-                      "#BCD631",
+  kipp_greenbrown = c(kipp_colors$green, # greens
+                      kipp_colors$lightgreen,
 
-                      "#C49A6C" #brown
+                      kipp_colors$brown #brown
                       ),
 
   ## Brown to Gray palette
-  kipp_browngray = c("#C49A6C", #brown
-                     "#F4EFEB", # grays
-                     "#CFCCC1",
-                     "#8D8685"
+  kipp_browngray = c(kipp_colors$brown, #brown
+
+                     kipp_colors$lightgray, # grays
+                     kipp_colors$gray,
+                     kipp_colors$darkgray
                      ),
 
   ## Gray only palette
-  kipp_grays = c("#F4EFEB", # grays
-                 "#CFCCC1",
-                 "#8D8685"
+  kipp_grays = c(kipp_colors$lightgray, # grays
+                 kipp_colors$gray,
+                 kipp_colors$darkgray
                  )
 )
+
+
