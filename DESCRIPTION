@@ -16,6 +16,7 @@ Imports:
     grDevices,
     viridis,
     ggplot2,
-    tidyverse
+    tidyverse,
+    crayon
 URL: https://github.com/kippchicago/kippcolors
 BugReports: https://github.com/kippchicago/kippcolors/issues

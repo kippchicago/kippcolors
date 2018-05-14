@@ -25,7 +25,7 @@ use_kipp_chicago_css <- function(color = "blue", directory = ".") {
   #bail if css file already exists
   if(length(list.files(sprintf("%s/www", directory), pattern = "\\.css"))>0){
     if(created) unlink(directory_www)
-    stop("CSS files arealdy exists. Delete or rename before using this function.")
+    stop(crayon::red("CSS files arealdy exist in directory www/.\nDelete or rename before using this function."))
   }
 
   file_name <- sprintf("kippcolors_%s.css", color)
@@ -34,4 +34,9 @@ use_kipp_chicago_css <- function(color = "blue", directory = ".") {
 
   file_target <- sprintf("%s/%s",directory_www, file_name)
   file.copy(from = file_location, to = file_target)
+  message("Addding %s to %s", file_name, directory_www)
+
+  message(crayon::red("Please add the following to your dashboardBody() block in app.R or in UI.R:"))
+  message(crayon::green(sprintf('tags$head(tags$link(rel = "stylesheet", type = "text/css", href = "%s"))',
+                                file_name)))
 }
