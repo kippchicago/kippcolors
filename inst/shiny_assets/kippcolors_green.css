@@ -1,10 +1,10 @@
 .skin-blue .main-header .logo {
-        background-color: #439539;
+        background-color: #BCD631;
         color: #FFF;
         }
 
 .skin-blue .main-header .navbar {
-    background-color: #BCD631;
+    background-color: #439539;
 }
 
 /* Sidebar stuff */
@@ -34,15 +34,20 @@
 }
 
 /* Primary box */
+.box.box-primary {
+    border-top-color: #439539;
+}
+
 .box.box-solid.box-primary  {
-    border: #60A2D7;
+    border: #439539;
+    border-top-color: #439539;
 }
 
 .box.box-solid.box-primary .box-header {
     color: #fff;
-    background: #60A2D7;
-    background-color: #60A2D7;
-    border: #60A2D7;
+    background: #439539;
+    background-color: #439539;
+    border: #439539;
 }
 
 
@@ -80,5 +85,15 @@
     background: #A7CFEE;
     background-color: #A7CFEE;
     border: #A7CFEE;
+}
+
+/* checkbox and radio labels */
+.checkbox label, .radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
 }
 
