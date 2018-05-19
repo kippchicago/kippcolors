@@ -84,10 +84,10 @@
 
 /* checkbox and radio labels */
 .checkbox label, .radio label {
-    min-height: 20px;
-    padding-left: 20px;
-    margin-bottom: 0;
-    font-weight: 400;
+      min-height: 20px;
+      padding-left: 20px;
+      margin-bottom: 0;
+      font-weight: 400;
     cursor: pointer;
     color: black;
 }
