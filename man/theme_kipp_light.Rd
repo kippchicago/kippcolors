@@ -15,4 +15,7 @@ theme_kipp_light(base_size = 12, base_family = "sans")
 Theme inspired by the plots on
 \href{KIPP Brand Guidlines}{http://www.kipp.org/brand}.
 }
+\seealso{
+Other themes kipp: \code{\link{theme_kipp_min}}
+}
 \concept{themes kipp}

@@ -18,3 +18,26 @@ theme_kipp_light <- function(base_size = 12, base_family = "sans"){
           panel.grid = ggplot2::element_line(color = "#CFCCC1")
     )
 }
+
+
+
+
+#' A minimal Theme inspired by kipp.org/brand
+#'
+#' Theme inspired by the plots on
+#' \href{KIPP Brand Guidlines}{http://www.kipp.org/brand}.
+#'
+#' @inheritParams kippcolors::theme_kipp_light
+#'
+#' @importFrom ggplot2 %+% %+replace%
+#'
+#' @family themes kipp
+#' @export
+theme_kipp_min <- function(){
+  kippcolors::theme_kipp_light() +
+  ggplot2::theme(
+    axis.line = element_line(color = NA),
+    panel.grid  = element_blank(),
+    panel.background = element_rect(fill = kipp_colors$lightgray),
+    panel.border = element_rect(color = NA))
+}

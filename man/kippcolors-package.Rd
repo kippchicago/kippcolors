@@ -7,7 +7,7 @@
 \title{kippcolors: KIPP compliant colors from [brand guidelines](http://www.kipp.org/brand)}
 \description{
 More about what it does (maybe more than one line)
-Use four spaces when indenting paragraphs within the Description.
+    Use four spaces when indenting paragraphs within the Description.
 }
 \seealso{
 Useful links:
